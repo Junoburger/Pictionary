@@ -2,7 +2,7 @@
 
 This repo contains a frontend and backend for a multiplayer Pictionary game. It uses Typescript, Koa, routing-controllers and TypeORM in the backend and React/Redux in the frontend. The backend exposes a REST API but also sends messages over websockets using SocketIO. 
 
-![example](https://gph.is/1pmqlS2)
+![example](https://media.giphy.com/media/VDj6gR3AC3A9W/giphy.gif)
 
 ## Getting Started
 
