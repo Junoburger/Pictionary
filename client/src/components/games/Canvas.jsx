@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import oldPaper from '../../images/oldpaper.jpg'
-
+import './Canvas.css'
 export default class extends Component {
   
   componentDidUpdate(prevProps){
@@ -16,8 +16,8 @@ if (prevProps.lines !== this.props.lines){
   }
   static defaultProps = {
     loadTimeOffset: 5,
-    brushSize: 8,
-    brushColor: "#fff",
+    brushSize: 12,
+    brushColor: "#000",
     canvasWidth: 600,
     canvasHeight: 600,
     disabled: false
@@ -218,17 +218,18 @@ if (prevProps.lines !== this.props.lines){
   
   render() {
   
-    
+
     return (
       <div>
       <canvas
         width={this.props.canvasWidth}
         height={this.props.canvasHeight}
+        className="Custom"
         style={{
           // display: "block",
-          backgroundImage: `url(${oldPaper})`,
-          backgroundSize: `cover`,
-          border: "white dashed 10px",
+          // backgroundImage: `url(${oldPaper})`,
+          // backgroundSize: `cover`,
+          border: `white dashed 10px`, 
           touchAction: "none",
           ...this.props.style
         }}

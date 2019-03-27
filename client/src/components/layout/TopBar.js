@@ -12,8 +12,8 @@ const TopBar = (props) => {
   const { location, history, user } = props
 
   return (
-    <AppBar position="absolute" style={{zIndex:10, height:'100px'}} color="default">
-      <Toolbar style={{padding:'10px'}}>
+    <AppBar position="absolute" style={{zIndex:10, height:'50px'}} color="default">
+      <Toolbar style={{padding:'5px'}}>
         <Typography variant="title" color="inherit" style={{flex: 1}}>
           Pictionary
         </Typography>

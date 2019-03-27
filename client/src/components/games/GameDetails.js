@@ -73,7 +73,7 @@ class GameDetails extends PureComponent {
       {
         game.status === 'started' &&
         player && player.symbol === 'x' &&
-        <div><Guesser id={game.id}/>Guess the word</div>
+        <div><Guesser id={game.id}/><h3 style={{fontSize:"21pt", fontWeight:"bolder"}}>Guess the word</h3></div>
       } 
 
       {
