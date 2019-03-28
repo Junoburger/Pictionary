@@ -62,7 +62,7 @@ class GameDetails extends PureComponent {
       .filter(p => p.symbol === game.winner)
       .map(p => p.userId)[0]
 
-    return (<Paper className="outer-paper">
+    return (<Paper className="outer-paper" elevation={0}>
       <h1>Game #{game.id}</h1>
 
       <p>Status: {game.status}</p>

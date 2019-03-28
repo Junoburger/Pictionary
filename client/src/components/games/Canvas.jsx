@@ -6,8 +6,6 @@ export default class extends Component {
   componentDidUpdate(prevProps){
 
 if (prevProps.lines !== this.props.lines){
-  // console.log(this.props.lines[0])
-  // this.redraw(this.props.lines[0])
   this.props.lines[0].map(line=>{
     return this.drawLine(line)
   })
@@ -153,7 +151,6 @@ if (prevProps.lines !== this.props.lines){
 
   drawLine = line => {
     if (!this.ctx) return;
-
     this.ctx.strokeStyle = line.color;
     this.ctx.lineWidth = line.size;
     this.ctx.lineCap = "round";
@@ -218,7 +215,6 @@ if (prevProps.lines !== this.props.lines){
   
   render() {
   
-
     return (
       <div>
       <canvas
@@ -229,7 +225,7 @@ if (prevProps.lines !== this.props.lines){
           // display: "block",
           // backgroundImage: `url(${oldPaper})`,
           // backgroundSize: `cover`,
-          border: `white dashed 10px`, 
+          border: `black groove 10px`, 
           touchAction: "none",
           ...this.props.style
         }}
@@ -251,9 +247,6 @@ if (prevProps.lines !== this.props.lines){
       /><br/>
       <button onClick={this.clear}>Clear Canvas</button>
       <button onClick={this.undo}>Undo last</button>
-     
-
-
       </div>
     );
   }

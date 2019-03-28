@@ -1,4 +1,27 @@
-.Custom:hover{
+.Custom{
+cursor: url('../../images/inactive-cursor.png'), auto;
+}
+
+.Custom:active{
 cursor: url('../../images/cursor.png'), auto;
 }
 
+
+button{
+    background:none;
+    border:black 2px solid;
+    border-radius: 5px;
+    font-size: 18pt;
+    margin:10px;
+    outline:none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    border:black 2px solid;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: ease-in-out 1.2s;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+}
