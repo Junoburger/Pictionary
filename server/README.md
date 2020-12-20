@@ -1,7 +1,3 @@
-# Tic Tac Toe Server
-
-This is a server for playing a multiplayer Tic Tac Toe game. 
-
 It has these endpoints:
 
 * `POST /users`: sign up as new user
